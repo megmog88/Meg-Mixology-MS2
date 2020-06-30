@@ -1,33 +1,26 @@
 
 //------Ingredient Search---//
-const btnSearch = document.getElementById('btnSearch');
-const ingredientSearch = document.getElementById('ingredient');
-const showSearch = document.getElementById('results');
-let out = "";
-
-btnSearch.onclick = function(){
-    var i = ingredientSearch.value;
-    const url = ('http://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita');
-    console.log(url)
-    fetch(url)
-    .then (function(data){
-        return data.json();
-    })
-    .then(function(jsonObject){
-        console.log(jsonObject);
-        for (vodka in jsonObject){
-            const cocktails = new Array (jsonObject[i].strDrink, jsonObject[i].strDrinkThumb, jsonObject[vodka].description, jsonObject.image_url)
-        cocktailsOut(cocktails);
+function getPopularCocktails(){
+    fetch('https://www.thecocktaildb.com/api/json/v2/9973533/popular.php')
+    .then(
+        function(response) {
+        if (response.status !== 200) {
+            console.log('Error with Status Code: ' + response.status);
+        return;
         }
-    showSearch.innerHTML = out;
-    })
-    .catch(function(e){
-        console.log("Error: " + e);
-    });
+        response.json().then(function(data){
+            displayPopularCocktails(data);
+        });
+    }
+)
+.catch(function(err){
+    console.log('Fetch Error :-S', err);
+});
 }
-function cocktailsOut(cocktails){
-  console.log(cocktails);
 
-};
+getPopularCocktails();
 
+function displayPopularCocktails(cocktails){
+    console.log(cocktails.drinks[10]);
 
+}
