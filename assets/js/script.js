@@ -21,6 +21,11 @@ function getPopularCocktails(){
 getPopularCocktails();
 
 function displayPopularCocktails(cocktails){
-    console.log(cocktails.drinks[10]);
+    console.log(cocktails.drinks[0]);
 
+    let cocktailSection = document.querySelector('#coktail-section')
+    let cocktailName = document.querySelector('h1')
+    cocktailName.innerHTML = cocktails.drinks[0].strDrink;
+
+    cocktailSection.appendChild(cocktailName);
 }
