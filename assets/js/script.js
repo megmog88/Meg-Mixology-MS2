@@ -21,11 +21,27 @@ function getPopularCocktails(){
 getPopularCocktails();
 
 function displayPopularCocktails(cocktails){
-    console.log(cocktails.drinks[0]);
 
-    let cocktailSection = document.querySelector('#coktail-section')
+    let listOfPopularCocktails = [0]
+            console.log(cocktails.drinks[listOfPopularCocktails])
     let cocktailName = document.querySelector('h1')
+    
     cocktailName.innerHTML = cocktails.drinks[0].strDrink;
 
-    cocktailSection.appendChild(cocktailName);
+    let img = document.querySelector('img')
+    img.src = cocktails.drinks[0].strDrinkThumb;
+
+    for(let i=1; i<16; i++){
+        let cocktailIngredients = document.querySelector('li')
+        cocktailIngredients.innerHTML = cocktails.drinks[0]['strIngredients${i}'];
+    }
+
+    let cocktailInstructions = document.querySelector('h2')
+    cocktailInstructions.innerHTML = cocktails.drinks[0].strInstructions;
+ 
+    
+
+
+
+    
 }
