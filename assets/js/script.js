@@ -22,26 +22,18 @@ getPopularCocktails();
 
 function displayPopularCocktails(cocktails){
 
-    let listOfPopularCocktails = [0]
-            console.log(cocktails.drinks[listOfPopularCocktails])
-    let cocktailName = document.querySelector('h1')
+
     
-    cocktailName.innerHTML = cocktails.drinks[0].strDrink;
+    let cocktailName = document.getElementById('#cocktail-name')
+    cocktailName.innerHTML = cocktails.drinks[0,1,2,3,4,5,6,7,8,9].strDrink;
 
     let img = document.querySelector('img')
-    img.src = cocktails.drinks[0].strDrinkThumb;
-
-    for(let i=1; i<16; i++){
-        let cocktailIngredients = document.querySelector('li')
-        cocktailIngredients.innerHTML = cocktails.drinks[0]['strIngredients${i}'];
-    }
-
-    let cocktailInstructions = document.querySelector('h2')
-    cocktailInstructions.innerHTML = cocktails.drinks[0].strInstructions;
- 
+    img.src = cocktails.drinks[0,1,2,3,4,5,6,7,8,9].strDrinkThumb;
     
+    let cocktailInstructions = document.getElementById('cocktail-method')
+    cocktailInstructions.innerHTML = cocktails.drinks[0,1,2,3,4,5,6,7,8,9].strInstructions;
+
+    //Get a list of ingredients and measures
 
 
-
-    
 }
