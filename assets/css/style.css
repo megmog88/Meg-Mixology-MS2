@@ -1,3 +1,46 @@
+/*-----------------------------Modal----*/
+.border-img{
+    position: relative;
+    text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-head{
+    color: #eccb7a;
+    text-decoration: none;
+    font-family: 'Balsamiq Sans', sans-serif;
+    text-align: center;
+}
+
+.modal-text{
+    color: #eccb7a;
+    font-size: 16px;
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+.modal-btn{
+    color:#050001;
+    background-color:#eccb7a;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-size: 20px;
+}
+.modal-btn a:visited{
+    color: #050001;
+}
+.modal-btn a:link{
+    color: #050001;
+}
+.modal a:hover{
+    color: #050001;
+    text-decoration: none;
+}
+
+
+
 .cocktail-image-lad{
     height: 100px;
     width: 100px;
