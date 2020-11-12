@@ -3,6 +3,10 @@
     position: relative;
     text-align: center;
 }
+
+.bg-black{
+    background-color: #050001;
+}
 .centered {
   position: absolute;
   top: 50%;
