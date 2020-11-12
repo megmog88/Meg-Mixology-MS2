@@ -9,6 +9,28 @@
     <title>Meg Mixology</title>
 </head>
 <body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary d-none" id="" data-toggle="modal" data-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade myModal" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog brd-modal">
+    <div class="modal-content bg-black">
+    <img src="assets/images/border-m.png" alt="Gold Border ClipArt" class="img-fluid border-img">
+    <div class="centered">
+      <div class="modal-header">
+        <h3 class="d-flex justify-content-center modal-head" id="staticBackdropLabel">Welcome to MEG MIXOLOGY</h3> </div>
+      <div class="modal-body d-flex justify-content-center modal-text">Are you over the age of 18?</div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn modal-btn" data-dismiss="modal"><a href="index.html">Yes</a></button>
+        <button type="button" class="btn modal-btn" ><a href="https://www.mocktails.com" target="_blank">No</a></button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
     <header>
     </header>
     <section id="cocktail-section">
