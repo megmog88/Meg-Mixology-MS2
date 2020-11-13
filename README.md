@@ -1,4 +1,4 @@
-![Logo](assets/images/)
+![Logo](assets/images/logo.png)
 
 # MileStone Project Two- Meg Mixology
 
