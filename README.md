@@ -22,11 +22,14 @@ the Cocktail DB API and bring a little lockdown joy to others.
 
 ### User Stories
 --
-1. 
-2. 
-3.  
-4. 
-5. 
+1. As spmeone who is stuck in lockdown, I want to explore different cocktails and find the one for me.
+2. As someone who has alwyas loved cocktails, I want to explore what different spirits go with what ingredients.
+3. As a cocktail lover myself, I love exploring new ideas and adding my own twist.
+4. As a newcomer to the hospitliaty industry I want to broaden my horizons and learn new things.
+5. As someone who is trying top devolop my busines it is always good to see what cocktails are the most popular 
+and learn a few more tricks in the meantime.
+6. As a business owner I love looking outside the box and expanding my business ventures with what the world has to offer.
+
 
 ### Wireframes
 
@@ -52,10 +55,31 @@ register page for a bit of fun. The fonts used are below from Google Fonts.
 
 ## Features
 
+### Carousel
+I have implented a carousel with the 20 most popular cocktails for website guests to look over.
+It shows the most current cocktails from the Cocktail DB API which is regularyly uodated to keep 
+everyone well informed and up to date on the current most popular cocktails. A brilliant way to 
+get ideas if opening a business or trying to get yours up to date, as well as a new comer to our 
+industry to learn the current tricks of the trade.
 
+### Search by main spirit
+We all know what alcohol we like and sometimes need inspiritation so the best way to do this is by searching
+your spirit of choice and getting a few ideas of what can come next. Also a brilliant tool for variation if 
+designing a new menu or broadenning your own horizons.
+
+### Chose your Destiny
+Just adding a bit of fun to my website to make the cards chose your cocktail by attaching a "random cockatil" link 
+to each card. So yes if you try again you may get a different cocktail, however destiny is always correct and the first
+coktail is your destiny. Just a bit of fun to keep everyone entertained. What was your destiny?
 
 ## Features Left to Implement
-
+I have a few features left to implement and these are as follows.
+### Equipment
+I would like to add a feature showing the different equipment need to incorporate with different levels of experience for
+different users. Looking at the best place to buy, best quality, best value for money etc.
+### A sweet or sour section
+Going forward sweet and sour is a strong impact on whether we enjoy a cocktail or not, so I would like to incorporate this 
+as a section to which my users can chose between a sweet or sour cocktail.
 
 ## Technologies Used
 Below is a list of all technologies used in order to achieve the end goal.
