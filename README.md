@@ -154,9 +154,11 @@ following steps in order to deploy my project.
 ## Credits
 
 ### Content
-- 
+* All written by myself(Meghan Jane Spence)
+* Used  cocktail DB API to get cockytail information running through my website
 ### Media
-
+* Golden Border Cliparts #2506192 (License: Personal Use)
+* 
 
 ## Acknowledgements
 

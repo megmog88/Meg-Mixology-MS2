@@ -44,9 +44,16 @@
 }
 
 
+/*--------Header Styling---*/
+.header-logo{
+    width: 100%;
+}
+/* -------------Canvas Positioning */
 
-.cocktail-image-lad{
-    height: 100px;
-    width: 100px;
-    display: block;
+#canvas{
+    position:absolute;
+   left:0;
+   top:0;
+   z-index:-1;
+
 }
