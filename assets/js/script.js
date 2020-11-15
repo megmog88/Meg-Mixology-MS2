@@ -95,12 +95,20 @@ function displayRandom(){
       console.log(data);
       const { drinks } = data;
       let random = '<h2>Your Destiny Cocktail</h2>';
-      drinks.forEach(drink => {
+      drinks.forEach(drink => 
+        {
       random += `
           <div>
             <h3>${drink.strDrink}</h3> 
             <img src="${drink.strDrinkThumb}" alt="drink thumbnail"/>
             <p>${drink.strInstructions}</p>
+            <ul>
+                <li>${drink.strMeasure1}, ${drink.strIngredient1}</li>
+                <li>${drink.strMeasure2}, ${drink.strIngredient2}</li>
+                <li>${drink.strMeasure3}, ${drink.strIngredient3}</li>
+                <li>${drink.strMeasure4}, ${drink.strIngredient4}</li>
+                <li>${drink.strMeasure5}, ${drink.strIngredient5}</li>
+            </ul>
           </div>`;
         });
       document.getElementById('random').innerHTML = random;
