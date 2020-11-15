@@ -21,14 +21,14 @@ function searchGin(){
    .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let output = '<h3 class="d-flex justify-content-center">Gin Cocktails</h3>';
+      let output = '<h3 class="textStyle d-flex justify-content-center">Gin Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
           <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
           <div class="card pl-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
-            <h6 class="text-style">${drink.strDrink}</h6>
+            <h6 class="textStyle">${drink.strDrink}</h6>
             </div>
             </div>
           </div>
@@ -43,14 +43,14 @@ function searchVodka(){
   .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let output = '<h3 class="d-flex justify-content-center">Vodka Cocktails</h3>';
+      let output = '<h3 class="textStyle d-flex justify-content-center">Vodka Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
           <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
           <div class="card pl-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
-            <h6 class="text-style">${drink.strDrink}</h6>
+            <h6 class="textStyle">${drink.strDrink}</h6>
             </div>
             </div>
           </div>`;
@@ -64,14 +64,14 @@ function searchTequila(){
   .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let output = '<h3 class="d-flex justify-content-center">Teqilla Cocktails</h3>';
+      let output = '<h3 class="textStyle d-flex justify-content-center">Teqilla Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
           <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
           <div class="card pl-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
-            <h6 class="text-style">${drink.strDrink}</h6>
+            <h6 class="textStyle">${drink.strDrink}</h6>
             </div>
             </div>
           </div>`;
@@ -85,7 +85,7 @@ function searchRum(){
   .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let output = '<h3 class="d-flex justify-content-center">Rum Cocktails</h3>';
+      let output = '<h3 class="textStyle d-flex justify-content-center">Rum Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
           <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
@@ -111,14 +111,14 @@ function displayRandom(){
       .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let random = `<h3 class="d-flex justify-content-center">Destiny Cocktail</h3>`;
+      let random = `<h3 class=" textStyle d-flex justify-content-center">Destiny Cocktail</h3>`;
       drinks.forEach(drink => 
         {
       random += `
                 <div>
             <h3>${drink.strDrink}</h3> 
             <img src="${drink.strDrinkThumb}" alt="drink thumbnail"/>
-            <p>${drink.strInstructions}</p>
+            <p class="textStyle">${drink.strInstructions}</p>
             <ul>
                 <li>${drink.strMeasure1}, ${drink.strIngredient1}</li>
                 <li>${drink.strMeasure2}, ${drink.strIngredient2}</li>

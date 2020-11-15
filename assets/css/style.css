@@ -49,6 +49,12 @@
     width: 100%;
     max-height: 250px;
 }
+
+/*------Text style-----*/
+.textStyle{
+    color: #eccb7a;
+    font-family: 'Balsamiq Sans', sans-serif;
+}
 /*-------Button Styling for Search Ingredients----*/
 .button-styling{
     background-color:  #050001;
