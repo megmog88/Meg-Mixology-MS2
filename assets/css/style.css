@@ -47,7 +47,7 @@
 /*--------Header Styling---*/
 .header-logo{
     width: 100%;
-    max-height: 200px;
+    max-height: 250px;
 }
 /*-------Button Styling for Search Ingredients----*/
 .button-styling{
@@ -55,6 +55,12 @@
     color: #eccb7a;
     justify-content: center;
     font-size: 24px;
+    border: none;
+}
+
+.button-styling a:hover{
+    background-color: #eccb7a;
+    color: #050001;
 }
 
 /* -------------Canvas Positioning */
