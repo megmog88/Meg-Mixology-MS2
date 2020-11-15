@@ -63,6 +63,11 @@
     color: #050001;
 }
 
+.ingredientThumb{
+    height: 100px;
+    width: 100px;
+}
+
 /* -------------Canvas Positioning */
 
 #canvas{

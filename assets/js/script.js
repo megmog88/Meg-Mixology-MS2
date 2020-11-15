@@ -4,7 +4,8 @@ $(document).ready(function(){
 $('.myModal').modal('show'); 
 
 });
- 
+
+
 //------Adding events to buttons to then search by that ingredient
 
 document.getElementById('searchGin').addEventListener('click', searchGin);
@@ -20,13 +21,18 @@ function searchGin(){
    .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let output = '<h2>Cocktails</h2>';
+      let output = '<h3 class="d-flex justify-content-center">Gin Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
-          <div>
-            <h3>${drink.strDrink}</h3> 
-            <img src="${drink.strDrinkThumb}" alt="drink thumbnail"/>
-          </div>`;
+          <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
+          <div class="card pl-5 bg-black">
+            <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
+            <div class="cardbody">
+            <h6 class="text-style">${drink.strDrink}</h6>
+            </div>
+            </div>
+          </div>
+          `;
         });
       document.getElementById('output').innerHTML = output;
     })
@@ -37,12 +43,16 @@ function searchVodka(){
   .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let output = '<h2>Cocktails</h2>';
+      let output = '<h3 class="d-flex justify-content-center">Vodka Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
-          <div>
-            <h3>${drink.strDrink}</h3> 
-            <img src="${drink.strDrinkThumb}" alt="drink thumbnail"/>
+          <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
+          <div class="card pl-5 bg-black">
+            <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
+            <div class="cardbody">
+            <h6 class="text-style">${drink.strDrink}</h6>
+            </div>
+            </div>
           </div>`;
         });
       document.getElementById('output').innerHTML = output;
@@ -54,12 +64,16 @@ function searchTequila(){
   .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let output = '<h2>Cocktails</h2>';
+      let output = '<h3 class="d-flex justify-content-center">Teqilla Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
-          <div>
-            <h3>${drink.strDrink}</h3> 
-            <img src="${drink.strDrinkThumb}" alt="drink thumbnail"/>
+          <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
+          <div class="card pl-5 bg-black">
+            <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
+            <div class="cardbody">
+            <h6 class="text-style">${drink.strDrink}</h6>
+            </div>
+            </div>
           </div>`;
         });
       document.getElementById('output').innerHTML = output;
@@ -71,12 +85,16 @@ function searchRum(){
   .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let output = '<h2>Cocktails</h2>';
+      let output = '<h3 class="d-flex justify-content-center">Rum Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
-          <div>
-            <h3>${drink.strDrink}</h3> 
-            <img src="${drink.strDrinkThumb}" alt="drink thumbnail"/>
+          <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
+          <div class="card pl-5 bg-black">
+            <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
+            <div class="cardbody">
+            <h6 class="text-style">${drink.strDrink}</h6>
+            </div>
+            </div>
           </div>`;
         });
       document.getElementById('output').innerHTML = output;
@@ -92,13 +110,12 @@ function displayRandom(){
      fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
       .then(response => response.json()) 
   .then(data => {
-      console.log(data);
       const { drinks } = data;
-      let random = '<h2>Your Destiny Cocktail</h2>';
+      let random = `<h3 class="d-flex justify-content-center">Destiny Cocktail</h3>`;
       drinks.forEach(drink => 
         {
       random += `
-          <div>
+                <div>
             <h3>${drink.strDrink}</h3> 
             <img src="${drink.strDrinkThumb}" alt="drink thumbnail"/>
             <p>${drink.strInstructions}</p>
@@ -109,7 +126,9 @@ function displayRandom(){
                 <li>${drink.strMeasure4}, ${drink.strIngredient4}</li>
                 <li>${drink.strMeasure5}, ${drink.strIngredient5}</li>
             </ul>
-          </div>`;
+            </div>
+            </div>
+            `;
         });
       document.getElementById('random').innerHTML = random;
     })
