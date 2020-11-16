@@ -5,42 +5,8 @@ $('.myModal').modal('show');
 
 });
 
-//--------Carousel of Popular Cocktails
-$(document).ready(function(){
-        $("myCarousel").carousel();
-});
-function displayPopularCocktail(myCarousel){
-fetch('https://www.thecocktaildb.com/api/json/v2/9973533/popular.php')
-  .then(response => response.json())
-  .then(data => {
-        const { drinks } = data;
-      let myCarousel = '<h3 class="textStyle d-flex justify-content-center"></h3>';
-      drinks.forEach(drink => {
-     myCarousel += `
-            <div class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="${drink.strDrinkThumb}" alt="picture">
-                            <div class="caption d-none d-md-block">
-                            <h5>${drink.strDrink}</h5>
-                            <p>${drink.strInstructions}</p>
-                            </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-          `;
-        });
-      document.getElementById('myCarousel').innerHTML = myCarousel;
-    })
-}
+//--------Carousel of Popular Cocktails 
+
 //------Adding events to buttons to then search by that ingredient
 
 document.getElementById('searchGin').addEventListener('click', searchGin);
@@ -136,11 +102,53 @@ function searchRum(){
     })
 }
 
+//----------------------------Search Recipe for cocktail
+function outputDrink(drink)
+{    
+    console.log(drink);
+    let index = 1;
+    let ingredientArray = [];
+    while (drink['strIngredient' + index]) {
+        ingredientArray.push({name: drink['strIngredient' + index], amount: (drink['strMeasure' + index]||'').trim() ? drink['strMeasure' + index]: "A dash "});
+        index++;
+    }
 
+    var text = '';
+
+    text += `<b>Drink: </b><br/>${drink.strDrink}<br/><br/>`;
+    text += `<b>Glass: </b><br/>${drink.strGlass}<br/><br/>`;
+    text += '<b>Ingredients:</b></br>';
+    ingredientArray.forEach((ingredient) => {
+        text += `<li>${ingredient.amount} of ${ingredient.name}</li>`;
+    });
+
+    text += `</br><b>Instructions: </b></br>${drink.strInstructions}<br/>`;
+
+    $( "#result" ).html(text);     
+}
+
+function downloadCocktail(){
+    let cocktailName = $('#cocktail').val();
+    console.log('Downloading details for: ', cocktailName);
+    var cocktail = encodeURIComponent(cocktailName);
+      $.ajax({
+        url:  'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + cocktail,
+        timeout:5000,
+       crossDomain: true,
+        dataType:'json',
+        success: function(result){
+           if (!result.drinks || result.drinks.length <= 0) {
+                $( "#result" ).html('No drinks found!!');
+             return;
+            }
+            // Get the first drink.
+            var drink = result.drinks[0];
+            outputDrink(drink);  
+        }
+        });}
 //--------Display Random Cocktail when card is clicked
 
-document.querySelectorAll('.display-random').forEach(item => {
-  item.addEventListener('click', displayRandom)});
+    document.querySelectorAll('.display-random').forEach(item => {item.addEventListener('click', displayRandom)});
 
 function displayRandom(){
      fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')

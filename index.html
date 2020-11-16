@@ -43,7 +43,6 @@
         </div>
         <div class="col-4">
         </div>
-        </div>
     </header>
    <section class="bg-black">
         <div class="row no-gutters">
@@ -51,7 +50,7 @@
                 <h1 class="textStyle">A Display of Popular Cocktails</h1>
             </div>
         </div>
-            <div id="myCarousel"></div>
+            <div id="showMe"></div>
         <div class="row no-gutters">
             <div class="col-12 justify-content-center d-flex">
                 <h1 class="textStyle">Search by Popular Spirit</h1>
@@ -71,11 +70,18 @@
                 <button id="searchRum" class="button-styling btn-block textStyle">Rum</button>
                 </div>
                 </div>
-        </div>
                 
                     <div id="output"></div>
         <div class="row no-gutters">
             <div class="col-12 m-5">
+            </div>
+        </div>
+        <div class="row no-gutters d-flex justify-content-center textStyle">
+            <div topmargin="40" leftmargin="40" onload="downloadCocktail()">
+                <input type="text" id="cocktail" value="">
+                    <button onclick="downloadCocktail()">Search Recipe</button>
+                    <div id="result">
+                    </div>
             </div>
         </div>
         <div class="row no-gutters">
@@ -88,7 +94,6 @@
                 was.....proceed with caution.</p>
             </div>
             </div>
-        </div>
             <div class="row no-gutters">
                 <div class="col-3 p-3">
                     <button class="display-random bg-black card-img"><img src="assets/images/Ace.png" class="img-fluid" alt="Ace card"/></button>
@@ -103,8 +108,8 @@
                     <button class="display-random bg-black card-img"><img src="assets/images/Jack.png" class="img-fluid" alt="Jack card"/></button>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="d-flex justify-content-center" id="random">
+            <div class="row no-gutters d-flex justify-content-center">
+                <div id="random">
                 </div>
             </div>
     </section>
