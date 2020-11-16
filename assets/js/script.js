@@ -6,8 +6,41 @@ $('.myModal').modal('show');
 });
 
 //--------Carousel of Popular Cocktails
-
-
+$(document).ready(function(){
+        $("myCarousel").carousel();
+});
+function displayPopularCocktail(myCarousel){
+fetch('https://www.thecocktaildb.com/api/json/v2/9973533/popular.php')
+  .then(response => response.json())
+  .then(data => {
+        const { drinks } = data;
+      let myCarousel = '<h3 class="textStyle d-flex justify-content-center"></h3>';
+      drinks.forEach(drink => {
+     myCarousel += `
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="${drink.strDrinkThumb}" alt="picture">
+                            <div class="caption d-none d-md-block">
+                            <h5>${drink.strDrink}</h5>
+                            <p>${drink.strInstructions}</p>
+                            </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+          `;
+        });
+      document.getElementById('myCarousel').innerHTML = myCarousel;
+    })
+}
 //------Adding events to buttons to then search by that ingredient
 
 document.getElementById('searchGin').addEventListener('click', searchGin);
