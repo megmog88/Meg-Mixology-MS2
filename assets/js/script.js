@@ -165,13 +165,13 @@ function displayRandom(){
             <img src="${drink.strDrinkThumb}" class="img-fluid" alt="drink thumbnail"/>
             <p class="textStyle">${drink.strInstructions}</p>
             <ul class="textStyle">
-                <li>${drink.strMeasure1}, ${drink.strIngredient1}</li>
+            <li>${drink.strMeasure1}, ${drink.strIngredient1}</li>
                 <li>${drink.strMeasure2}, ${drink.strIngredient2}</li>
                 <li>${drink.strMeasure3}, ${drink.strIngredient3}</li>
                 <li>${drink.strMeasure4}, ${drink.strIngredient4}</li>
                 <li>${drink.strMeasure5}, ${drink.strIngredient5}</li>
-            </ul>
-            </div>
+            </il>
+                </div>
             </div>
         
             `;
