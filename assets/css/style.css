@@ -74,12 +74,8 @@
     width: 100px;
 }
 
-/* -------------Canvas Positioning */
-
-#canvas{
-    position:absolute;
-   left:0;
-   top:0;
-   z-index:-1;
-
+/* -------------Footer-styling---*/
+.social{
+    font-size: 46px;
+    color:  #eccb7a;
 }

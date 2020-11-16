@@ -5,6 +5,8 @@ $('.myModal').modal('show');
 
 });
 
+//--------Carousel of Popular Cocktails
+
 
 //------Adding events to buttons to then search by that ingredient
 
@@ -101,6 +103,7 @@ function searchRum(){
     })
 }
 
+
 //--------Display Random Cocktail when card is clicked
 
 document.querySelectorAll('.display-random').forEach(item => {
@@ -111,15 +114,16 @@ function displayRandom(){
       .then(response => response.json()) 
   .then(data => {
       const { drinks } = data;
-      let random = `<h3 class=" textStyle d-flex justify-content-center">Destiny Cocktail</h3>`;
+      let random = '<h3></h3>'
       drinks.forEach(drink => 
         {
       random += `
-                <div>
-            <h3>${drink.strDrink}</h3> 
-            <img src="${drink.strDrinkThumb}" alt="drink thumbnail"/>
+      <div class="row no-gutters">
+                <div class="col-8 offset-2 offset-md-3 col-md-6">
+            <h4 class="textStyle pt-5">${drink.strDrink}</h4> 
+            <img src="${drink.strDrinkThumb}" class="img-fluid" alt="drink thumbnail"/>
             <p class="textStyle">${drink.strInstructions}</p>
-            <ul>
+            <ul class="textStyle">
                 <li>${drink.strMeasure1}, ${drink.strIngredient1}</li>
                 <li>${drink.strMeasure2}, ${drink.strIngredient2}</li>
                 <li>${drink.strMeasure3}, ${drink.strIngredient3}</li>
@@ -128,6 +132,7 @@ function displayRandom(){
             </ul>
             </div>
             </div>
+        
             `;
         });
       document.getElementById('random').innerHTML = random;
