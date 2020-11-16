@@ -6,6 +6,35 @@ $('.myModal').modal('show');
 });
 
 //--------Carousel of Popular Cocktails 
+window.onload = displayCocktails;
+
+function displayCocktails(){ fetch('https://www.thecocktaildb.com/api/json/v2/9973533/popular.php')
+   .then(response => response.json())
+  .then(data => {
+      const { drinks } = data;
+      let slideShow = '<h3></h3>';
+      drinks.forEach(drink => {
+        slideShow += 
+        `
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="${drink.strDrinkThumb}" alt="First slide">
+    </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+          `;
+        });
+        document.getElementById('slideShow').innerHTML= slideShow;
+    })
+}
 
 //------Adding events to buttons to then search by that ingredient
 
