@@ -46,7 +46,7 @@ function searchGin(){
       let output = '<h3 class="textStyle d-flex justify-content-center">Gin Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
-          <div class="card-deck col-6 col-sm-4 d-inline-block pb-2 bg-black">
+          <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
           <div class="card pl-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
@@ -68,7 +68,7 @@ function searchVodka(){
       let output = '<h3 class="textStyle d-flex justify-content-center">Vodka Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
-          <div class="card-deck col-6 col-sm-4 d-inline-block pb-2 bg-black">
+          <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
           <div class="card pl-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
@@ -89,7 +89,7 @@ function searchTequila(){
       let output = '<h3 class="textStyle d-flex justify-content-center">Teqilla Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
-          <div class="card-deck col-6 col-sm-4 d-inline-block pb-2 bg-black">
+          <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
           <div class="card pl-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
@@ -110,7 +110,7 @@ function searchRum(){
       let output = '<h3 class="textStyle d-flex justify-content-center">Rum Cocktails</h3>';
       drinks.forEach(drink => {
      output += `
-          <div class="card-deck col-6 col-sm-4 d-inline-block pb-2 bg-black">
+          <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
           <div class="card pl-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
@@ -152,7 +152,7 @@ function downloadCocktail(){
     let cocktailName = $('#cocktail').val();
     console.log('Downloading details for: ', cocktailName);
     var cocktail = encodeURIComponent(cocktailName);
-      $.ajax({
+      $ajax({
         url:  'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + cocktail,
         timeout:5000,
        crossDomain: true,
