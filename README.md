@@ -46,7 +46,7 @@ and learn a few more tricks in the meantime.
 I chose a bold and cool color scheme which is reflected all through my project as cocktail bartenders are bold and cool, below is 
 an image of colors used. Codes are ##050001, #eccb7a,
 
-![Color Scheme](assets/images/)
+![Color Scheme](assets/images/color.PNG)
 
 ### Typogrophy
 Using google fonts i decided to use the following font "'Xanh Mono', monospace;" as I believe this had a good feel for 
