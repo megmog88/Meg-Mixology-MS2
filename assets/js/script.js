@@ -17,7 +17,7 @@ function displayCocktails(){ fetch('https://www.thecocktaildb.com/api/json/v2/99
         slideShow += 
         `<div class="carousel-item">
             <img class="d-block card-img" src="${drink.strDrinkThumb}" alt="Second slide">
-        <div class="carousel-caption d-block">
+        <div class="carousel-caption">
             <h1 class="textStyle">${drink.strDrink}</h1>
             <p class="textStyle">${drink.strInstructions}</p>
         </div>
@@ -164,7 +164,6 @@ function downloadCocktail(){
                 return;
             }
 
-            // Get the first drink.
             var drink = result.drinks[0];
             outputDrink(drink);  
         },
