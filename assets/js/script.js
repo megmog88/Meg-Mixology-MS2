@@ -15,12 +15,14 @@ function displayCocktails(){ fetch('https://www.thecocktaildb.com/api/json/v2/99
       console.log(data);
       drinks.forEach(drink => {
         slideShow += 
-        `<div class="carousel-item">
-            <img class="d-block card-img" src="${drink.strDrinkThumb}" alt="Second slide">
-        <div class="carousel-caption">
-            <h1 class="textStyle">${drink.strDrink}</h1>
-            <p class="textStyle">${drink.strInstructions}</p>
-        </div>
+        `<div class="carousel-item h-80">
+            <div class="card-body bg-black">
+                <h3 class="card-title textStyle d-flex justify-content-center">${drink.strDrink}</h3>
+                <p class=" card-text textStyle">${drink.strInstructions}</p>
+            </div>
+            <div class="card d-flex justify-content-center">
+                <img class="d-block card-img-top" src="${drink.strDrinkThumb}" alt="Second slide">
+            </div>
         </div>
           `;
         });
