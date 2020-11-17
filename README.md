@@ -67,6 +67,11 @@ We all know what alcohol we like and sometimes need inspiritation so the best wa
 your spirit of choice and getting a few ideas of what can come next. Also a brilliant tool for variation if 
 designing a new menu or broadenning your own horizons.
 
+### Search cocktail recipe by recipe name
+Allow the user once seen different cocktail to retrieve the recipe from the cocktail API. Even look up ones that may
+not feature in my project but are in the API. A great little tool if some forgets what liqor goes in an old fashioned
+for instance. A great little tool for the user to gain knowledge as well.
+
 ### Chose your Destiny
 Just adding a bit of fun to my website to make the cards chose your cocktail by attaching a "random cockatil" link 
 to each card. So yes if you try again you may get a different cocktail, however destiny is always correct and the first
@@ -87,10 +92,12 @@ Below is a list of all technologies used in order to achieve the end goal.
 #### Languages
 * HTML -A standard markup language used for the content of my webpage
 * CSS - A style sheet language used for the design of the web page
-* JavaScript - 
+* JavaScript - A text based programming language used to make a web page
+interactive, in conjunction with HTML and CSS as a base for formatting.
+
 #### Frameworks
 * Bootstrap [https://v4-alpha.getbootstrap.com/]- Used for layout of my web page and for styling as well.
-* JQuery []
+* JQuery [https://code.jquery.com/jquery-3.5.1.js]
 #### Libraries
 * Google Fonts [https://fonts.google.com/]
 * Font Awesome(Bootstrap Library) [https://www.bootstrapcdn.com/fontawesome/]
@@ -109,7 +116,7 @@ Below is a list of all technologies used in order to achieve the end goal.
 * Autoprefixer CSS[https://autoprefixer.github.io/]
 * Am I responsive [http://ami.responsivedesign.is/] used to check compatibility with a numerous amount of devices,
 see picture below.
-![Am I Responsive](assets/images/Responsive.PNG)
+![Am I Responsive](assets/images/Amiresponsive.PNG)
 * I contstantly was using chrome web developer tools, however when push to my mobile found these to not be the most
 accurate. The design was though out to ensure smaller screens were not squished and legible throughout. Only one element
 which is the clipboard "pop" art that does not appear on extra small. The layout of the other pages are slightly different
@@ -122,10 +129,11 @@ throughout each breakpoint on therapy and product page.
     - Mozilla Firefox
     - Internet Explorer
 * Tested manually on teh following devices
-    - Iphone 6
+    - Iphone 7
     - Ipad 
     - Ipad Pro
     - HP Windows Laptop
+    - Mac Book Pro
  
 ## Issues while Testing
 
