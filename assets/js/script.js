@@ -17,8 +17,9 @@ function displayCocktails(){ fetch('https://www.thecocktaildb.com/api/json/v2/99
         slideShow += 
         `<div class="carousel-item">
             <img class="d-block card-img" src="${drink.strDrinkThumb}" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-block">
             <h1>${drink.strDrink}</h1>
+            <p>${drink.strInstructions}</p>
         </div>
         </div>
           `;
