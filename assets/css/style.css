@@ -17,19 +17,19 @@
 .modal-head{
     color: #eccb7a;
     text-decoration: none;
-    font-family: 'Balsamiq Sans', sans-serif;
+    font-family: 'Xanh Mono', monospace;
     text-align: center;
 }
 
 .modal-text{
     color: #eccb7a;
     font-size: 16px;
-    font-family: 'Balsamiq Sans', sans-serif;
+    font-family: 'Xanh Mono', monospace;
 }
 .modal-btn{
     color:#050001;
     background-color:#eccb7a;
-    font-family: 'Balsamiq Sans', sans-serif;
+    font-family: 'Xanh Mono', monospace;
     font-size: 20px;
 }
 .modal-btn a:visited{
@@ -53,7 +53,7 @@
 /*------Text style-----*/
 .textStyle{
     color: #eccb7a;
-    font-family: 'Balsamiq Sans', sans-serif;
+    font-family: 'Xanh Mono', monospace;
 }
 
 h3 {

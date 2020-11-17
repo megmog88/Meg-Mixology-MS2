@@ -44,13 +44,13 @@ and learn a few more tricks in the meantime.
 
 ### Color scheme
 I chose a bold and cool color scheme which is reflected all through my project as cocktail bartenders are bold and cool, below is 
-an image of colors used. Codes are #, #, #, #
+an image of colors used. Codes are ##050001, #eccb7a,
 
 ![Color Scheme](assets/images/)
 
 ### Typogrophy
-Using google fonts i decided to use two fonts although one is purely for the clipart on the 
-register page for a bit of fun. The fonts used are below from Google Fonts.
+Using google fonts i decided to use the following font "'Xanh Mono', monospace;" as I believe this had a good feel for 
+my project and fits in well with the message trying to be portrayed. 
 
 
 ## Features
