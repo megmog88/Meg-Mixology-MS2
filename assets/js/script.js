@@ -15,13 +15,13 @@ function displayCocktails(){ fetch('https://www.thecocktaildb.com/api/json/v2/99
       console.log(data);
       drinks.forEach(drink => {
         slideShow += 
-        `<div class="carousel-item h-80">
+        `<div class="carousel-item">
             <div class="card-body bg-black">
                 <h3 class="card-title textStyle d-flex justify-content-center">${drink.strDrink}</h3>
-                <p class=" card-text textStyle">${drink.strInstructions}</p>
+                <p class="card-text textStyle pl-5 pr-5">${drink.strInstructions}</p>
             </div>
-            <div class="card d-flex justify-content-center">
-                <img class="d-block card-img-top" src="${drink.strDrinkThumb}" alt="Second slide">
+            <div class="card d-flex justify-content-center bg-black">
+                <img class="d-block w-100 card-img-top pl-5 pr-5" src="${drink.strDrinkThumb}" alt="Second slide">
             </div>
         </div>
           `;
@@ -49,7 +49,7 @@ function searchGin(){
       drinks.forEach(drink => {
      output += `
           <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
-          <div class="card pl-5 bg-black">
+          <div class="card pl-md-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
             <h6 class="textStyle">${drink.strDrink}</h6>
@@ -71,7 +71,7 @@ function searchVodka(){
       drinks.forEach(drink => {
      output += `
           <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
-          <div class="card pl-5 bg-black">
+          <div class="card pl-md-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
             <h6 class="textStyle">${drink.strDrink}</h6>
@@ -92,7 +92,7 @@ function searchTequila(){
       drinks.forEach(drink => {
      output += `
           <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
-          <div class="card pl-5 bg-black">
+          <div class="card pl-md-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
             <h6 class="textStyle">${drink.strDrink}</h6>
@@ -113,7 +113,7 @@ function searchRum(){
       drinks.forEach(drink => {
      output += `
           <div class="card-deck col-5 col-sm-4 d-inline-block pb-2 bg-black">
-          <div class="card pl-5 bg-black">
+          <div class="card pl-md-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
             <h6 class="textStyle">${drink.strDrink}</h6>
@@ -182,23 +182,24 @@ function displayRandom(){
      fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
       .then(response => response.json()) 
   .then(data => {
-      const { drinks } = data;
-      let random = '<h3></h3>'
-      drinks.forEach(drink => 
-        {
+       const { drinks } = data;
+      let random = '<h3 class="textStyle d-flex justify-content-center">YOUR DESTINY</h3>';
+      drinks.forEach(drink => {
       random += `
       <div class="row no-gutters">
-                <div class="col-8 offset-2 offset-md-3 col-md-6">
+            <div class="col-8 offset-2 offset-md-3 col-md-6">
             <h4 class="textStyle pt-5">${drink.strDrink}</h4> 
             <img src="${drink.strDrinkThumb}" class="img-fluid" alt="drink thumbnail"/>
             <p class="textStyle">${drink.strInstructions}</p>
             <ul class="textStyle">
             <li>${drink.strMeasure1}, ${drink.strIngredient1}</li>
-                <li>${drink.strMeasure2}, ${drink.strIngredient2}</li>
-                <li>${drink.strMeasure3}, ${drink.strIngredient3}</li>
-                <li>${drink.strMeasure4}, ${drink.strIngredient4}</li>
-                <li>${drink.strMeasure5}, ${drink.strIngredient5}</li>
-            </il>
+            <li>${drink.strMeasure2}, ${drink.strIngredient2}</li>
+            <li>${drink.strMeasure3}, ${drink.strIngredient3}</li>
+            <li>${drink.strMeasure4}, ${drink.strIngredient4}</li>
+            <li>${drink.strMeasure5}, ${drink.strIngredient5}</li>
+            <li>${drink.strMeasure6}, ${drink.strIngredient6}</li>
+            <li>${drink.strMeasure7}, ${drink.strIngredient7}</li>
+            <li>${drink.strMeasure8}, ${drink.strIngredient8}</li>
                 </div>
             </div>
         

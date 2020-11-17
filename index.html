@@ -6,7 +6,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Meg Mixology</title>
 </head>
@@ -28,8 +28,8 @@
                         <div class="modal-body d-flex justify-content-center modal-text">Are you over the age of 18?
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn modal-btn" data-dismiss="modal"><a href="index.html">Yes</a></button>
-                            <button type="button" class="btn modal-btn" ><a href="https://www.mocktails.com" target="_blank">No</a></button>
+                            <div role="button" type="button" class="btn modal-btn" data-dismiss="modal"><a href="index.html">Yes</a></div>
+                            <div role="button" type="button" class="btn modal-btn" ><a href="https://www.mocktails.com" target="_blank">No</a></div>
                         </div>
                     </div>
             </div>
@@ -100,7 +100,7 @@
             <h4 class="textStyle">If you like the look of a cocktail above search the name for the recipe</h4>
         </div>
         <div class="row no-gutters d-flex justify-content-center textStyle pb-5">
-            <div class="col-md-4 col-offset-4">
+            <div class="col-8 col-md-4">
                 <div topmargin="40" onload="downloadCocktail()">
                     <input type="text" id="cocktail" value="">
                         <button class=" bg-black searchButton textStyle" onclick="downloadCocktail()">Search Recipe</button>
