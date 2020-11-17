@@ -12,9 +12,9 @@
 </head>
 <body>
 <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary d-none" id="" data-toggle="modal" data-target="#staticBackdrop">
+    <div class="btn btn-primary d-none" id="" data-toggle="modal" data-target="#staticBackdrop">
         Launch static backdrop modal
-    </button>
+    </div>
 
 <!-- Modal -->
     <div class="modal fade myModal" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -28,8 +28,8 @@
                         <div class="modal-body d-flex justify-content-center modal-text">Are you over the age of 18?
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <div role="button" type="button" class="btn modal-btn" data-dismiss="modal"><a href="index.html">Yes</a></div>
-                            <div role="button" type="button" class="btn modal-btn" ><a href="https://www.mocktails.com" target="_blank">No</a></div>
+                            <div role="button" class="btn modal-btn" data-dismiss="modal"><a href="index.html">Yes</a></div>
+                            <div role="button" class="btn modal-btn" ><a href="https://www.mocktails.com" target="_blank">No</a></div>
                         </div>
                     </div>
             </div>
@@ -59,7 +59,7 @@
             <div  class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="assets/images/bestcocktail.png">
+                        <img class="d-block w-100" src="assets/images/bestcocktail.png" alt="bestcockatilsImage">
                     </div>
                     <div id="slideShow"></div>
                 </div>
@@ -101,7 +101,7 @@
         </div>
         <div class="row no-gutters d-flex justify-content-center textStyle pb-5">
             <div class="col-8 col-md-4">
-                <div topmargin="40" onload="downloadCocktail()">
+                <div onload="downloadCocktail()">
                     <input type="text" id="cocktail" value="">
                         <button class=" bg-black searchButton textStyle" onclick="downloadCocktail()">Search Recipe</button>
                             <div id="result">
@@ -160,7 +160,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
-    <script src="assets/js/script.js" type="text/javascript"></script>
+    <script src="assets/js/script.js"></script>
     
    
 </body>
