@@ -114,7 +114,7 @@ function searchRum(){
           <div class="card pl-5 bg-black">
             <img src="${drink.strDrinkThumb}" class="ingredientThumb card-img-top" alt="drink thumbnail"/>
             <div class="cardbody">
-            <h6 class="text-style">${drink.strDrink}</h6>
+            <h6 class="textStyle">${drink.strDrink}</h6>
             </div>
             </div>
           </div>`;
@@ -143,7 +143,7 @@ function outputDrink(drink)
         text += `<li>${ingredient.amount} of ${ingredient.name}</li>`;
     });
 
-    text += `</br><b>Instructions: </b></br>${drink.strInstructions}<br/>`;
+    text += `</br><b>Instructions: </b></br><p>${drink.strInstructions}</p></br>`;
 
     $( "#result" ).html(text);     
 }
