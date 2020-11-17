@@ -89,12 +89,14 @@
         <div class="row no-gutters d-flex justify-content-center">
             <h4 class="textStyle">If you like the look of a cocktail above search the name for the recipe</h4>
         </div>
-        <div class="row no-gutters d-flex justify-content-center textStyle pb-5 pt-4">
-            <div topmargin="40" leftmargin="40" onload="downloadCocktail()">
+        <div class="row no-gutters d-flex justify-content-center textStyle pb-5">
+            <div class="col-md-4 col-offset-4">
+            <div topmargin="40" onload="downloadCocktail()">
                 <input type="text" id="cocktail" value="">
                     <button class=" bg-black searchButton textStyle" onclick="downloadCocktail()">Search Recipe</button>
                     <div id="result">
                     </div>
+            </div>
             </div>
         </div>
         <div class="row no-gutters">

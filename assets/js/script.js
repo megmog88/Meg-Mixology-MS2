@@ -18,8 +18,8 @@ function displayCocktails(){ fetch('https://www.thecocktaildb.com/api/json/v2/99
         `<div class="carousel-item">
             <img class="d-block card-img" src="${drink.strDrinkThumb}" alt="Second slide">
         <div class="carousel-caption d-block">
-            <h1>${drink.strDrink}</h1>
-            <p>${drink.strInstructions}</p>
+            <h1 class="textStyle">${drink.strDrink}</h1>
+            <p class="textStyle">${drink.strInstructions}</p>
         </div>
         </div>
           `;
@@ -143,7 +143,7 @@ function outputDrink(drink)
         text += `<li>${ingredient.amount} of ${ingredient.name}</li>`;
     });
 
-    text += `</br><b>Instructions: </b></br><p>${drink.strInstructions}</p></br>`;
+    text += `Instructions: <p>${drink.strInstructions}</p>`;
 
     $( "#result" ).html(text);     
 }
@@ -152,21 +152,27 @@ function downloadCocktail(){
     let cocktailName = $('#cocktail').val();
     console.log('Downloading details for: ', cocktailName);
     var cocktail = encodeURIComponent(cocktailName);
-      $ajax({
+    $.ajax({
+        type: 'GET',
         url:  'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + cocktail,
         timeout:5000,
-       crossDomain: true,
+        crossDomain: true,
         dataType:'json',
         success: function(result){
-           if (!result.drinks || result.drinks.length <= 0) {
+            if (!result.drinks || result.drinks.length <= 0) {
                 $( "#result" ).html('No drinks found!!');
-             return;
+                return;
             }
+
             // Get the first drink.
             var drink = result.drinks[0];
             outputDrink(drink);  
+        },
+        error: function (errorMessage) {
+            console.error(errorMessage);
         }
-        });}
+    });
+}
 //--------Display Random Cocktail when card is clicked
 
     document.querySelectorAll('.display-random').forEach(item => {item.addEventListener('click', displayRandom)});
