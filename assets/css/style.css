@@ -55,6 +55,11 @@
     color: #eccb7a;
     font-family: 'Balsamiq Sans', sans-serif;
 }
+
+h3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
 /*-------Button Styling for Search Ingredients----*/
 .button-styling{
     background-color:  #050001;
@@ -64,7 +69,7 @@
     border: none;
 }
 
-.button-styling a:hover{
+.button-styling a:visited{
     background-color: #eccb7a;
     color: #050001;
 }
@@ -80,7 +85,17 @@
     color:  #eccb7a;
 }
 
-/*----------Carousel Images---*/
-.carouselImage{
-    
+
+/*----------------Media Queries-----*/
+
+@media only screen and (max-device-width: 576px) {
+    .modal-head{
+        font-size: 12px;
+    }
+    .modal-text{
+        font-size: 12px;
+    }
+    .modal-btn{
+        font-size: 12px;
+    }
 }
