@@ -32,6 +32,9 @@ and learn a few more tricks in the meantime.
 
 
 ### Wireframes
+Below I have 3 different Wireframes in order to ensure the design of my project works responsively. These were ofcourse 
+the initial design and a few parts have changed due to practicality and more realistic when visualy looking at the end product.
+
 
 #### DESKTOP
 ![Index Page](assets/images/)
