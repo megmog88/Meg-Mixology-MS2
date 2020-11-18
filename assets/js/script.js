@@ -176,7 +176,7 @@ function downloadCocktail(){
 }
 //--------Display Random Cocktail when card is clicked
 
-    document.querySelectorAll('.display-random').forEach(item => {item.addEventListener('click', displayRandom)});
+document.querySelectorAll('.display-random').forEach(item => {item.addEventListener('click', displayRandom)});;
 
 function displayRandom(){
      fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
@@ -206,5 +206,5 @@ function displayRandom(){
             `;
         });
       document.getElementById('random').innerHTML = random;
-    })
+    });
 }

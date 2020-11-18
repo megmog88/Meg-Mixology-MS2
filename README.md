@@ -117,15 +117,15 @@ interactive, in conjunction with HTML and CSS as a base for formatting.
 * W3C HTML Validator[https://validator.w3.org/]
 * W3C CSS Validator[https://jigsaw.w3.org/css-validator/]
 * Autoprefixer CSS[https://autoprefixer.github.io/]
+* JavaScript Validator[https://extendsclass.com/javascript-fiddle.html]
 * Am I responsive [http://ami.responsivedesign.is/] used to check compatibility with a numerous amount of devices,
 see picture below.
 ![Am I Responsive](assets/images/Amiresponsive.PNG)
-* I contstantly was using chrome web developer tools, however when push to my mobile found these to not be the most
-accurate. The design was though out to ensure smaller screens were not squished and legible throughout. Only one element
-which is the clipboard "pop" art that does not appear on extra small. The layout of the other pages are slightly different
-throughout each breakpoint on therapy and product page.
+* I consistantly was using chrome web developer tools, however when push to my mobile found these to not be the most
+accurate. The design was though out to ensure smaller screens were not squished and legible throughout. The layout 
+of the other pages are slightly different throughout each breakpoint.
 
-* Tested each page manually to ensure navigation and effects worked throughout and responded accordingly.
+* Tested each page manually to ensure effects worked throughout and responded accordingly.
 * Tested on my site on different browsers such as   
     - Safari
     - Google chrome
@@ -139,7 +139,11 @@ throughout each breakpoint on therapy and product page.
     - Mac Book Pro
  
 ## Issues while Testing
-
+* I had a few issues with HTML validator, I corrected some which had bad/unused id's in them, however there are 
+two errors in which I have left as it works. The role of button shouldn't have an a link. 
+* My CSS came back with 3 errors, however 2 were linked through to bootstrap with unknown attributes. I had one unknown
+media query come back. Fixed and sorted. 
+* JavaScript- I was just missing a few semi colons that are now in place. 
 
 ## Deployment
 My project was started on GitHub[github.com] by making a repositary and then using them with the GitPod IDE. I did the 
@@ -150,7 +154,7 @@ following steps in order to deploy my project.
 3. Scroll down to GitHub Pages section in settings
 4. Where it says source choose master branch.
 5. Then your site is published
-6. The link is [https://megmog88.github.io/witch-doctor-welch/] to the live website.
+6. The link is [https://megmog88.github.io/Meg-Mixology-MS2/] to the live website.
 
 ## Clone or Download
 1. When in the git hub repositary click on the green button "Clone or Download"
@@ -166,11 +170,18 @@ following steps in order to deploy my project.
 
 ### Content
 * All written by myself(Meghan Jane Spence)
-* Used  cocktail DB API to get cockytail information running through my website
+* Used  cocktail DB API[https://www.thecocktaildb.com/api.php] to get cocktail information running through my website
 ### Media
 * Golden Border Cliparts #2506192 (License: Personal Use)
-* 
+* Card Images I got from my sister as she had them available and made the background transparent for me.
+* Cocktail images come from the coktail API
 
 ## Acknowledgements
+* First and foremost my little sister(best friend) for helping with the logo and encouragement throughout,
+all be lockdowned seperately this time around.
+* The guys who have been working on site with me and having to hear me constantly until it works then have 
+to endure me dancing.
+* My mentor(well in this case 2 mentors), Maranatha and Gerard. I had some last minute fighting to play catch up with ,
+and they stepped in last minute to show me some valuable guidance.
 
 
