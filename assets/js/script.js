@@ -18,10 +18,10 @@ function displayCocktails(){ fetch('https://www.thecocktaildb.com/api/json/v2/99
         `<div class="carousel-item">
             <div class="card-body bg-black">
                 <h3 class="card-title textStyle d-flex justify-content-center">${drink.strDrink}</h3>
-                <p class="card-text textStyle pl-5 pr-5">${drink.strInstructions}</p>
+                <p class="card-text textStyle pl-md-5 pr-md-5">${drink.strInstructions}</p>
             </div>
             <div class="card d-flex justify-content-center bg-black">
-                <img class="d-block w-100 card-img-top pl-5 pr-5" src="${drink.strDrinkThumb}" alt="Second slide">
+                <img class="d-block w-100 card-img-top pl-md-5 pr-md-5" src="${drink.strDrinkThumb}" alt="Second slide">
             </div>
         </div>
           `;
