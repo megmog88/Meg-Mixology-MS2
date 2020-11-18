@@ -37,10 +37,10 @@ the initial design and a few parts have changed due to practicality and more rea
 The medium and desktop are the same as it was only smaller devices where it had to be changed. Both are in the same folder. 
 
 #### DESKTOP
-[a link](https://github.com/megmog88/Meg-Mixology-MS2/blob/master/MS2%20Wireframes%20For%20Desktop%2CTablet%20and%20Mobile.bmpr)
+[Desktop WireFrames](https://github.com/megmog88/Meg-Mixology-MS2/blob/master/MS2%20Wireframes%20For%20Desktop%2CTablet%20and%20Mobile.bmpr)
 
 #### MOBILE 
-[a link](https://github.com/megmog88/Meg-Mixology-MS2/blob/master/MS2%20Wireframes%20For%20Desktop%2CTablet%20and%20Mobile.bmpr)
+[Mobile WireFrames](https://github.com/megmog88/Meg-Mixology-MS2/blob/master/MS2%20Wireframes%20For%20Desktop%2CTablet%20and%20Mobile.bmpr)
 
 ### Color scheme
 I chose a bold and cool color scheme which is reflected all through my project as cocktail bartenders are bold and cool, below is 
@@ -179,6 +179,9 @@ following steps in order to deploy my project.
 ## Credits
 
 ### Content
+* The SearchRecipe part of my code was inspired and mostly taken from the followoing link(author: Terry Lenox) as it helped me to understand and
+added value to my project.
+[click here to view](https://stackoverflow.com/questions/49580528/how-to-filter-through-json-return-from-api-with-similar-prop)
 * All written by myself(Meghan Jane Spence)
 * Used  cocktail DB API[https://www.thecocktaildb.com/api.php] to get cocktail information running through my website
 ### Media

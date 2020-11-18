@@ -125,8 +125,8 @@ function searchRum(){
     })
 }
 
-//----------------------------Search Recipe for cocktail(This code is credited to Terry Lenox, I found it on StackOverflow.
-//----------------------------There were parts of the code that I have editted for my needs
+//----------------------------Search Recipe for cocktail(See credits in READEME.md for link to where I got help 
+//with this piece code from stack Overlflow.
 function outputDrink(drink)
 {    
     console.log(drink);
