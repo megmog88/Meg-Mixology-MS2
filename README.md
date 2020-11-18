@@ -22,28 +22,25 @@ the Cocktail DB API and bring a little lockdown joy to others.
 
 ### User Stories
 --
-1. As spmeone who is stuck in lockdown, I want to explore different cocktails and find the one for me.
+1. As someone who is stuck in lockdown, I want to explore different cocktails and find the one for me.
 2. As someone who has alwyas loved cocktails, I want to explore what different spirits go with what ingredients.
 3. As a cocktail lover myself, I love exploring new ideas and adding my own twist.
 4. As a newcomer to the hospitliaty industry I want to broaden my horizons and learn new things.
-5. As someone who is trying top devolop my busines it is always good to see what cocktails are the most popular 
+5. As someone who is trying top develop my busines it is always good to see what cocktails are the most popular 
 and learn a few more tricks in the meantime.
 6. As a business owner I love looking outside the box and expanding my business ventures with what the world has to offer.
 
 
 ### Wireframes
-Below I have 3 different Wireframes in order to ensure the design of my project works responsively. These were ofcourse 
+Below I have 2 different Wireframes in order to ensure the design of my project works responsively. These were ofcourse 
 the initial design and a few parts have changed due to practicality and more realistic when visualy looking at the end product.
-
+The medium and desktop are the same as it was only smaller devices where it had to be changed. Both are in the same folder. 
 
 #### DESKTOP
-![Index Page](assets/images/)
-
-#### MEDIUM DEVICE 
-![Medium Veiw](assets/images/)
+[a link](https://github.com/megmog88/Meg-Mixology-MS2/blob/master/MS2%20Wireframes%20For%20Desktop%2CTablet%20and%20Mobile.bmpr)
 
 #### MOBILE 
-![Mobile Veiw](assets/images/)
+[a link](https://github.com/megmog88/Meg-Mixology-MS2/blob/master/MS2%20Wireframes%20For%20Desktop%2CTablet%20and%20Mobile.bmpr)
 
 ### Color scheme
 I chose a bold and cool color scheme which is reflected all through my project as cocktail bartenders are bold and cool, below is 
@@ -137,6 +134,16 @@ of the other pages are slightly different throughout each breakpoint.
     - Ipad Pro
     - HP Windows Laptop
     - Mac Book Pro
+
+## Testing User Stories
+1. As a user in lockdown I can easily be inspired by the many different cocktails displayed on the pageand even 
+take a look by my flavour interests.
+2. As someone excited to learn new twists I can now do this with a bit of help and guidance
+3. As a cocktail lover I can explore other options out there and broaden my horizons
+4. As a newbie in hospitality I can now easily acces a lot of information and look good infront of my boss.
+5. As a business developer the websoite shows me up to date cocktails and shows me trends in the cocktails. Also
+allows me to strengthen my knowledge.
+6. The world clearly has a lot more for me to offer and a business owner and making cocktails is definately one of them.
  
 ## Issues while Testing
 * I had a few issues with HTML validator, I corrected some which had bad/unused id's in them, however there are 
