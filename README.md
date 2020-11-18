@@ -123,17 +123,20 @@ accurate. The design was though out to ensure smaller screens were not squished 
 of the other pages are slightly different throughout each breakpoint.
 
 * Tested each page manually to ensure effects worked throughout and responded accordingly.
-* Tested on my site on different browsers such as   
-    - Safari
-    - Google chrome
-    - Mozilla Firefox
-    - Internet Explorer
 * Tested manually on teh following devices
     - Iphone 7
     - Ipad 
     - Ipad Pro
     - HP Windows Laptop
     - Mac Book Pro
+* Browser Capability- I have tested on the following browsers.
+    - Mozilla
+    - Microsoft Edge
+    - Safari
+    - Google Chrome
+    - Internet Explorer
+    The only one that my site does not work on is Internet Explorer but this is a known issue as I used fetch API
+    which is not supported by this browser so a known bug. Internet Explorer is however outdated.
 
 ## Testing User Stories
 1. As a user in lockdown I can easily be inspired by the many different cocktails displayed on the pageand even 
