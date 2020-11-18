@@ -125,7 +125,8 @@ function searchRum(){
     })
 }
 
-//----------------------------Search Recipe for cocktail
+//----------------------------Search Recipe for cocktail(This code is credited to Terry Lenox, I found it on StackOverflow.
+//----------------------------There were parts of the code that I have editted for my needs
 function outputDrink(drink)
 {    
     console.log(drink);
@@ -136,7 +137,7 @@ function outputDrink(drink)
         index++;
     }
 
-    var text = '';
+    let text = '';
 
     text += `<b>Drink: </b><br/>${drink.strDrink}<br/><br/>`;
     text += `<b>Glass: </b><br/>${drink.strGlass}<br/><br/>`;
@@ -152,7 +153,6 @@ function outputDrink(drink)
 
 function downloadCocktail(){
     let cocktailName = $('#cocktail').val();
-    console.log('Downloading details for: ', cocktailName);
     var cocktail = encodeURIComponent(cocktailName);
     $.ajax({
         type: 'GET',
@@ -191,16 +191,6 @@ function displayRandom(){
             <h4 class="textStyle pt-5">${drink.strDrink}</h4> 
             <img src="${drink.strDrinkThumb}" class="img-fluid" alt="drink thumbnail"/>
             <p class="textStyle">${drink.strInstructions}</p>
-            <ul class="textStyle">
-            <li>${drink.strMeasure1}, ${drink.strIngredient1}</li>
-            <li>${drink.strMeasure2}, ${drink.strIngredient2}</li>
-            <li>${drink.strMeasure3}, ${drink.strIngredient3}</li>
-            <li>${drink.strMeasure4}, ${drink.strIngredient4}</li>
-            <li>${drink.strMeasure5}, ${drink.strIngredient5}</li>
-            <li>${drink.strMeasure6}, ${drink.strIngredient6}</li>
-            <li>${drink.strMeasure7}, ${drink.strIngredient7}</li>
-            <li>${drink.strMeasure8}, ${drink.strIngredient8}</li>
-                </div>
             </div>
         
             `;
